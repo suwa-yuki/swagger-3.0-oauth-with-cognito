@@ -1,0 +1,1 @@
+# swagger-3.0-oauth-with-cognito
