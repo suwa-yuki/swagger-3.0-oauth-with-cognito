@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  swagger:
+    build: .
+    environment:
+      API_URL: /swagger.yaml
+      BASE_URL: /
+    volumes:
+      - ./swagger.yaml:/usr/share/nginx/html/swagger.yaml
+    restart: always
+    ports:
+      - 3200:8080

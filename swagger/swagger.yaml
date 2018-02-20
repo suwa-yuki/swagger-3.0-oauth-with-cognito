@@ -1,0 +1,27 @@
+openapi: "3.0.0"
+info:
+  title: Simple API overview
+  version: 1.0.0
+components:
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      description: For more information, see https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-userpools-server-contract-reference.html
+      flows:
+        authorizationCode:
+          authorizationUrl: https://<your domain>.auth.ap-northeast-1.amazoncognito.com/oauth2/authorize
+          tokenUrl: https://<your domain>.auth.ap-northeast-1.amazoncognito.com/oauth2/token
+          scopes:
+            openid: openid token
+paths:
+  /:
+    get:
+      operationId: listGet
+      summary: List API versions
+      security:
+        - OAuth2: [openid]
+      responses:
+        200:
+          description: 200 response
+          content:
+            application/json:
