@@ -2,6 +2,10 @@
 
 ## How To Use
 
+### Create Cogntio User Pools Client
+
+![cognito-client.png](cognito-client.png)
+
 ### Modify swagger.yaml
 
 ```
