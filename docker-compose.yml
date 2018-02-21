@@ -2,7 +2,7 @@ version: '2'
 
 services:
   swagger:
-    build: .
+    image: swaggerapi/swagger-ui
     environment:
       API_URL: /swagger.yaml
       BASE_URL: /

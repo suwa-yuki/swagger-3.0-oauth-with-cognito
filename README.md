@@ -1,10 +1,12 @@
-# Swagger 3.0 OAuth 2.0 Authentication & Authorization using Amazon Cognito
+# Swagger 3.0 OAuth 2 Authentication / Authorization using Amazon Cognito User Pools
 
 ## How To Use
 
+See 👉 [Swagger 3\.0のOAuth認証にCognito User PoolsのOAuth Clientを使う ｜ Developers\.IO](https://dev.classmethod.jp/tool/swagger/swagger-3-oauth-cognito-user-pools/)
+
 ### Create Cogntio User Pools Client
 
-![cognito-client.png](cognito-client.png)
+![images/cognito-client.png](images/cognito-client.png)
 
 ### Modify swagger.yaml
 
@@ -32,4 +34,4 @@ $ docker-compose up -d
 
 http://localhost:3200/
 
-![sample.png](sample.png)
+![images/sample.png](images/sample.png)
